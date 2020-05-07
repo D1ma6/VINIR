@@ -1,0 +1,25 @@
+@import "header";
+@import "intro";
+@import "about";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header__nav-link-active {
+  color: #ff7a00;
+
+  &:hover {
+    border-bottom: 1px solid #ff7a00;
+  }
+}

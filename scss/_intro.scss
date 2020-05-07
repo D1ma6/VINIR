@@ -1,0 +1,77 @@
+.intro {
+  background: url("../img/Rectangle\ 1\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 780px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  // left__intro
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+
+    margin: auto 0;
+    &-line {
+      width: 50px;
+      height: 1px;
+      background: #fff;
+
+      &-active {
+        width: 80px;
+        height: 2px;
+        background: #ff7a00;
+      }
+    }
+  }
+
+  // intro__middle
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin: 200px 0 0 0;
+
+    &_title {
+      font-family: "Lemonada";
+      font-size: 48px;
+      font-weight: 400;
+    }
+    &_subtitle {
+      font-size: 24px;
+      font-weight: 40;
+    }
+    &_btn {
+      margin: 50px auto 0 auto;
+      padding: 10px 20px;
+      width: 145px;
+
+      border: 1px solid #ff7a00;
+      border-radius: 2px;
+
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  }
+
+  // intro__right
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+
+    margin: auto 50px auto 0;
+  }
+}
