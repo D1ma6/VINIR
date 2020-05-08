@@ -178,7 +178,6 @@
   color: #393939;
   margin: -195px 0 0 0;
   position: relative;
-  z-index: 2;
 }
 
 .about::before {
@@ -337,6 +336,103 @@
   font-size: 36px;
   font-weight: 800;
   color: #1c1c1c;
+}
+
+.dishes {
+  width: 100%;
+  position: relative;
+  padding: 0 50px;
+  margin: 200px 0 0 0;
+}
+
+.dishes::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/Rectangle 60.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  top: -580px;
+  z-index: -2;
+  width: 100%;
+  height: 840px;
+}
+
+.dishes__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dishes__top_title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.dishes__top__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 88px;
+}
+
+.dishes__top__btns_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: 1px solid #ff7a00;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.dishes__top__btns_btn:hover {
+  cursor: pointer;
+}
+
+.dishes__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+.dishes__bottom__item {
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.dishes__bottom__item-1 {
+  background-image: url("../img/Rectangle 14.jpg");
+}
+
+.dishes__bottom__item-2 {
+  background-image: url("../img/Rectangle 15.jpg");
+}
+
+.dishes__bottom__item-3 {
+  background-image: url("../img/Rectangle 16.jpg");
+}
+
+.dishes__bottom__item-4 {
+  background-image: url("../img/Rectangle 17.jpg");
 }
 
 *,
