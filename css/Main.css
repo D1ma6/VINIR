@@ -448,7 +448,7 @@
           align-items: center;
   text-align: center;
   color: #393939;
-  margin: 100px 0 0 0;
+  margin: 100px 0 471px 0;
   position: relative;
 }
 
@@ -488,7 +488,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1100px;
+  max-width: 1100px;
   height: 120px;
   background: #fff;
   margin: 20px 0 0 0;
@@ -573,6 +573,162 @@
 
 .testimonials__review__btns_btn:nth-child(2) {
   background: #d0d0d0;
+}
+
+.footer {
+  background: #00010c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  margin: -8px 0 0 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/Rectangle 25.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 50%;
+  margin: -20px 0 0 -12px;
+  background-image: url("../img/Group 69.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 90px;
+}
+
+.footer__left_title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+}
+
+.footer__left_title span {
+  color: #ff7a00;
+}
+
+.footer__left_title::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #ff7a00;
+  position: absolute;
+  margin: 0 0 0 2px;
+}
+
+.footer__left_text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #393939;
+  margin: 10px 0 0 0;
+}
+
+.footer__left_copyright {
+  font-size: 12px;
+  font-weight: 40;
+  color: #393939;
+  margin: 40px 0 0 0;
+}
+
+.footer__right {
+  width: 50%;
+  background-image: url("../img/Rectangle 23.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 210px;
+}
+
+.footer__right__title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__right__input {
+  width: 300px;
+  height: 30px;
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+
+.footer__right__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__right__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__right__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__right__input::placeholder {
+  color: #ffffff;
+}
+
+.footer__right__socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 0 0;
+}
+
+.footer__right__socialmedia_text {
+  font-size: 10px;
+  margin: 0 20px 0 0;
+}
+
+.footer__right__socialmedia_icon img {
+  width: 15px;
+  height: 15px;
+}
+
+.footer__right__socialmedia_icon:nth-child(3) {
+  margin: 0 25px;
 }
 
 *,
