@@ -26,3 +26,12 @@ body {
     border-bottom: 1px solid #ff7a00;
   }
 }
+@media only screen and (max-width: 850px) {
+  .header__nav-link-active {
+    color: #ff7a00;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
