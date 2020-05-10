@@ -74,11 +74,10 @@
   .header {
     padding: 30px 30px;
   }
-}
-
-.sticky {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 15px 30px;
+  .sticky {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -1137,6 +1136,102 @@
     width: 100%;
     height: 300px;
   }
+}
+
+.menuIntro {
+  background: url("../../img/jazmin-quaynor-9Y8vxVQN4o4-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.menuIntro::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #00010c;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.menuIntro * {
+  z-index: 2;
+}
+
+.intro__middle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro__middle_menu {
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 !important;
+}
+
+.intro__middle__inner {
+  margin: 30vh 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro__middle_title_menu {
+  margin: 200px 0;
+}
+
+.intro__middle__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 10px 0;
+  width: 36px;
+}
+
+.intro__middle__btns_btn {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.intro__middle__btns_btn-active {
+  background: #ff7a00 !important;
+}
+
+.intro__middle_text {
+  max-width: 300px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.intro__middle_slidebtn {
+  margin: 0 0 20px 0;
 }
 
 *,

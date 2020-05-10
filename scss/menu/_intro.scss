@@ -1,0 +1,81 @@
+.menuIntro {
+  background: url("../../img/jazmin-quaynor-9Y8vxVQN4o4-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #00010c;
+    position: absolute;
+    opacity: 0.5;
+  }
+  & * {
+    z-index: 2;
+  }
+}
+.intro {
+  // intro__middle
+  &__middle {
+    &_menu {
+      height: 100%;
+      justify-content: space-between;
+      margin: 0 !important;
+    }
+    align-items: center;
+
+    &__inner {
+      margin: 30vh 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_title {
+      &_menu {
+        margin: 200px 0;
+      }
+    }
+    &__btns {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 0 0 10px 0;
+
+      width: 36px;
+
+      &_btn {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+
+        &-active {
+          background: #ff7a00 !important;
+        }
+      }
+    }
+
+    &_text {
+      max-width: 300px;
+
+      font-size: 14px;
+      letter-spacing: 0.2px;
+    }
+
+    &_slidebtn {
+      margin: 0 0 20px 0;
+    }
+  }
+}

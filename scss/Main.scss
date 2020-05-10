@@ -1,9 +1,12 @@
-@import "header";
-@import "intro";
-@import "about";
-@import "dishes";
-@import "testimonials";
-@import "footer";
+// home
+@import "home/header";
+@import "home/intro";
+@import "home/about";
+@import "home/dishes";
+@import "home/testimonials";
+@import "home/footer";
+// menu
+@import "menu/intro";
 
 *,
 *::before,
