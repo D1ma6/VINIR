@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   position: fixed;
   z-index: 1000;
@@ -1583,6 +1584,170 @@
   font-weight: 800;
   color: #dd6e07;
   margin: 20px 0 0 0;
+}
+
+.ddeals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 120px 0 0 0;
+  height: 440px;
+  letter-spacing: 0.2px;
+  position: relative;
+}
+
+.ddeals::before {
+  content: "";
+  background-image: url("../../img/Rectangle 38.svg");
+  background-size: cover;
+  width: 100%;
+  height: 638px;
+  position: absolute;
+  z-index: -1;
+  top: -84px;
+}
+
+.ddeals__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #393939;
+  max-width: 355px;
+}
+
+.ddeals__left_title {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1c1c1c;
+}
+
+.ddeals__left_subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 30px;
+  position: relative;
+}
+
+.ddeals__left_subtitle::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: #1c1c1c;
+  position: absolute;
+  left: 0;
+}
+
+.ddeals__left_price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #dd6e07;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0 0 0;
+  position: relative;
+}
+
+.ddeals__left_price::after {
+  content: "£20.99";
+  text-decoration: line-through;
+  font-size: 8px;
+  font-weight: 400;
+  color: #393939;
+  margin: 0 0 0 10px;
+}
+
+.ddeals__left_text {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 15px 0 0 0;
+}
+
+.ddeals__left_btn {
+  font-size: 10px;
+  font-weight: 400;
+  color: #393939;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #dd6e07;
+  border-radius: 2px;
+  margin: 30px 0 0 0;
+}
+
+.ddeals__right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-image: url("../../img/Grilled General Tso’s Cauliflower Kabobs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 100%;
+}
+
+.slider {
+  margin: 140px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.slider::before {
+  content: "Drag for more";
+  color: #393939;
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.slider::after {
+  content: "";
+  background-image: url("../../img/Arrow 5.svg");
+  background-size: cover;
+  width: 12.5px;
+  height: 7.36px;
+  margin: 1px 0 0 50px;
+  position: absolute;
+}
+
+.slider__img {
+  height: 250px;
+  overflow: hidden;
+}
+
+.glide__slide {
+  overflow: hidden;
+  height: 250px;
 }
 
 *,

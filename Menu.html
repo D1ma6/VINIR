@@ -6,6 +6,8 @@
     <title>Document</title>
 
     <!-- links -->
+    <link rel="stylesheet" href="css/glide.core.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lemonada&display=swap"
       rel="stylesheet"
@@ -252,9 +254,128 @@
         <!-- /.menu__items -->
       </section>
       <!-- /.menu -->
+
+      <section class="ddeals">
+        <div class="ddeals__left">
+          <h1 class="ddeals__left_title">Deal of the day</h1>
+          <span class="ddeals__left_subtitle"
+            >Grilled General Tso’s Cauliflower Kabobs</span
+          >
+          <span class="ddeals__left_price">£13.99</span>
+          <p class="ddeals__left_text">
+            Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+            reiciendis voluptatibus maiores alias
+          </p>
+
+          <a href="#" class="ddeals__left_btn">Reserve now</a>
+        </div>
+        <!-- /.ddeals__left -->
+        <div class="ddeals__right"></div>
+        <!-- /.ddeals__right -->
+      </section>
+      <!-- /.ddeals -->
+      <section class="slider">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img
+                  src="img/fabrizio-magoni-boaDpmC-_Xo-unsplash.jpg"
+                  alt=""
+                  class="slider__img"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="img/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg"
+                  alt=""
+                  class="slider__img"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="img/the-creative-exchange-d1ngW7SNehM-unsplash.jpg"
+                  alt=""
+                  class="slider__img"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="img/chuttersnap-DOBIZ_sqgXM-unsplash.jpg"
+                  alt=""
+                  class="slider__img"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /.slider -->
+      <footer class="footer">
+        <div class="footer__left">
+          <div class="footer__left__inner">
+            <!-- /.footer__left__inner -->
+            <h1 class="footer__left_title">VINI<span>R</span></h1>
+            <p class="footer__left_text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus, qui
+              blanditiis praesentium voluptatum deleniti atque corrupti, quos
+              dolores et quas molestias excepturi sint, obcaecati cupiditate non
+              provident, similique sunt in culpa, qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga.
+            </p>
+            <span class="footer__left_copyright"
+              >2016-2020 © Copyright VINIR</span
+            >
+          </div>
+        </div>
+        <!-- /.footer__left -->
+        <div class="footer__right">
+          <div class="footer__right__inner">
+            <span class="footer__right__title">Newsletter</span>
+            <input
+              class="footer__right__input"
+              type="text"
+              placeholder="Enter your email..."
+            />
+            <div class="footer__right__socialmedia">
+              <span class="footer__right__socialmedia_text">Follow us on:</span>
+              <a href="#" class="footer__right__socialmedia_icon"
+                ><img src="img/Rectangle 5.png" alt=""
+              /></a>
+              <a href="#" class="footer__right__socialmedia_icon"
+                ><img src="img/Rectangle 6.png" alt=""
+              /></a>
+              <a href="#" class="footer__right__socialmedia_icon"
+                ><img src="img/Rectangle 7.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- /.footer__right -->
+      </footer>
+      <!-- /.footer -->
     </main>
     <!-- /.main -->
 
     <script src="script/Javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        perView: 4,
+        breakpoints: {
+          800: {
+            perView: 3,
+          },
+          600: {
+            perView: 2,
+          },
+        },
+        gap: 20,
+        focusAt: "center",
+        autoplay: 3000,
+      };
+      new Glide(".glide", config).mount();
+    </script>
   </body>
 </html>
