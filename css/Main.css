@@ -1750,6 +1750,283 @@
   height: 250px;
 }
 
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  position: relative;
+}
+
+.gallery::before {
+  content: "";
+  width: 100%;
+  height: 902px;
+  background-image: url("../../img/vishwas-katti-UrQ_BS9bLXQ-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.gallery__title {
+  margin: 120px 0 0 0;
+  font-family: "Lemonada";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.gallery__content {
+  width: 100%;
+  height: 2830px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[22];
+      grid-template-columns: repeat(22, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin: 20px 0 100px 0;
+}
+
+.gallery__content__item {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.gallery__content__item:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.gallery__content__item:hover::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.gallery__content__item:hover::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  border: 1px solid #fff;
+  position: absolute;
+}
+
+.gallery__content__item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  background-image: url("../../img/fabrizio-magoni-boaDpmC-_Xo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-2 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 7;
+  grid-column: 9 / 16;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  background-image: url("../../img/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-3 {
+  -ms-grid-column: 16;
+  -ms-grid-column-span: 7;
+  grid-column: 16 / 23;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  background-image: url("../../img/the-creative-exchange-d1ngW7SNehM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / 9;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  background-image: url("../../img/chuttersnap-DOBIZ_sqgXM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-5 {
+  -ms-grid-column: 16;
+  -ms-grid-column-span: 7;
+  grid-column: 16 / 23;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  background-image: url("../../img/kyle-peyton-OJhc8ykHnBM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-6 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 15;
+  grid-column: 1 / 16;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / 5;
+  background-image: url("../../img/Rectangle 43.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-7 {
+  -ms-grid-column: 16;
+  -ms-grid-column-span: 7;
+  grid-column: 16 / 23;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  background-image: url("../../img/clem-onojeghuo-zlABb6Gke24-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-8 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / 9;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+  background-image: url("../../img/zhaoqi-yu-1tiLDBo0Wlk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-9 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 14;
+  grid-column: 9 / 23;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / 6;
+  background-image: url("../../img/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-10 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / 9;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6 / 8;
+  background-image: url("../../img/kelsey-chance-ZrhtQyGFG6s-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-11 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 14;
+  grid-column: 9 / 23;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6 / 8;
+  background-image: url("../../img/roman-kraft-P8zDQz8Y2Vc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-12 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 15;
+  grid-column: 1 / 16;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 2;
+  grid-row: 8 / 10;
+  background-image: url("../../img/patryk-sobczak-KveL_hxuY0Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-13 {
+  -ms-grid-column: 16;
+  -ms-grid-column-span: 7;
+  grid-column: 16 / 23;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  grid-row: 8 / 9;
+  background-image: url("../../img/jonathan-nguyen-XwO0raJ2dQM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-14 {
+  -ms-grid-column: 16;
+  -ms-grid-column-span: 7;
+  grid-column: 16 / 23;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  grid-row: 9 / 11;
+  background-image: url("../../img/hanny-naibaho-Soeu0ffDa-s-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-15 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1 / 9;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10 / 11;
+  background-image: url("../../img/fred-moon-S9yn7XYqxoU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__content__item-16 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 7;
+  grid-column: 9 / 16;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10 / 11;
+  background-image: url("../../img/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 *,
 *::before,
 *::after {
