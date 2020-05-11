@@ -1776,6 +1776,18 @@
   z-index: -1;
 }
 
+.gallery::after {
+  content: "";
+  width: 100%;
+  height: 1000px;
+  top: 1350px;
+  background-image: url("../../img/Group 56.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
 .gallery__title {
   margin: 120px 0 0 0;
   font-family: "Lemonada";
@@ -2025,6 +2037,118 @@
   background-image: url("../../img/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.contact__contact {
+  background-image: url("../../img/william-iven-SpVHcbuKi6E-unsplash (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: -2;
+}
+
+.contact__contact::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: -1;
+}
+
+.contact__contact_title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+}
+
+.contact__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #00010c;
+  height: 600px;
+}
+
+.contact__field__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 420px;
+}
+
+.contact__field__field_input {
+  padding: 9px 20px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  margin: 20px 0 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.contact__field__field_name {
+  margin: 20px 20px 0 0;
+  max-width: 200px;
+}
+
+.contact__field__field_surname {
+  max-width: 200px;
+}
+
+.contact__field__field_msg {
+  height: 150px;
+}
+
+.contact__field__field__id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 0 0;
 }
 
 *,
