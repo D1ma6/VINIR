@@ -14,3 +14,29 @@ const navSlie = () => {
   });
 };
 navSlie();
+
+const reserve = () => {
+  const reserveBtn = document.querySelector(".header__nav-link_h");
+  const reserveField = document.querySelector(".reserve");
+  const reserveCloseBtn = document.querySelector(".reserve__content__closeBtn");
+  const bodySelected = document.querySelector("body");
+  const reserveContent = document.querySelector(".reserve__content");
+
+  reserveBtn.onclick = () => {
+    reserveField.style.display = "block";
+    bodySelected.style.overflow = "hidden";
+  };
+
+  reserveCloseBtn.onclick = () => {
+    reserveField.style.display = "none";
+    bodySelected.style.overflow = "visible";
+  };
+
+  window.onclick = (event) => {
+    if (event.target == reserveField) {
+      reserveField.style.display = "none";
+      bodySelected.style.overflow = "visible";
+    }
+  };
+};
+reserve();
